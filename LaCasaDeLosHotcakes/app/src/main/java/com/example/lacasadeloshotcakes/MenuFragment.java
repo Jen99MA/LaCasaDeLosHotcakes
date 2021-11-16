@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+//Hola Moni ¿Cómo estás? c:
+
 /**
  * A simple {@link Fragment} subclass.
  * create an instance of this fragment.
