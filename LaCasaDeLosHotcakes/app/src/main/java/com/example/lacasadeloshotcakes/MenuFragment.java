@@ -36,7 +36,7 @@ listener = _listener;
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_menu,container,false);
 
-       promo_ImageView = v.findViewById(R.id.promocion_image_view);
+       promo_ImageView = v.findViewById(R.id.promo_image_view);
        home_ImageView = v.findViewById(R.id.home_image_view);
        reserva_ImageView = v.findViewById(R.id.reserva_image_view);
 
