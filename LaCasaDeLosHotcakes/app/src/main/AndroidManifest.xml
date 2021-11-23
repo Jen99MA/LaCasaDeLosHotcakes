@@ -10,19 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LaCasaDeLosHotcakes">
         <activity
-            android:name=".DetallePromoActivity"
+            android:name=".DetallePromoActivityFragment"
             android:exported="true" />
         <activity
-            android:name=".Reservaciones"
+            android:name=".ReservacionesFragment"
             android:exported="true" />
         <activity
-            android:name=".PromocionesActivity"
+            android:name=".PromocionesFragment"
             android:exported="true" />
         <activity
-            android:name=".DetallesPlatillo"
+            android:name=".DetallesPlatilloFragment"
             android:exported="true" />
         <activity
-            android:name=".DesayunosActivity"
+            android:name=".DesayunosFragment"
             android:exported="true" />
         <activity
             android:name=".MainActivity"

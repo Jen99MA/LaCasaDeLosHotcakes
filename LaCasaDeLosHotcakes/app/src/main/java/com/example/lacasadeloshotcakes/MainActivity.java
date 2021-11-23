@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity implements OnFragmentInterac
         desayunosImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent miIntent =  new Intent(MainActivity.this, DesayunosActivity.class);
+                Intent miIntent =  new Intent(MainActivity.this, DesayunosFragment.class);
 
                 startActivity(miIntent);
             }
@@ -75,8 +75,27 @@ public class MainActivity extends AppCompatActivity implements OnFragmentInterac
 
                 break;
 
+            case R.id.DesayunoMenuImageView:
 
+                getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.contenedor_principal, new DesayunosFragment(this))
+                        .setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left)
+                        .addToBackStack(null)
+                        .commit();
+
+                break;
 
         }
+    }
+
+    @Override
+    public void alEscogerPlatillo(PlatilloFragment p) {
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.contenedor_principal, new DetallesPlatilloFragment(p,this))
+                .setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left)
+                .addToBackStack(null)
+                .commit();
     }
 }
