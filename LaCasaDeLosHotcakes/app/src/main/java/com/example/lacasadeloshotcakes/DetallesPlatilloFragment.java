@@ -15,11 +15,11 @@ public class DetallesPlatilloFragment extends Fragment {
     TextView titulo, detalles, alergias, precio;
 
 OnFragmentInteractionListener listener;
-PlatilloFragment platilloEntrante;
+Platillo platilloEntrante;
     public DetallesPlatilloFragment() {
         // Required empty public constructor
     }
-    public DetallesPlatilloFragment(PlatilloFragment p, OnFragmentInteractionListener _listener) {
+    public DetallesPlatilloFragment(Platillo p, OnFragmentInteractionListener _listener) {
         listener =_listener;
         platilloEntrante = p;
     }

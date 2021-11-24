@@ -26,17 +26,7 @@ public class MainActivity extends AppCompatActivity implements OnFragmentInterac
                 .replace(R.id.contenedor_inferior, new MenuFragment())
                 .commit();
 
-        desayunosImage = findViewById(R.id.DesayunoMenuImageView);
 
-
-        desayunosImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent miIntent =  new Intent(MainActivity.this, DesayunosFragment.class);
-
-                startActivity(miIntent);
-            }
-        });
     }
 
     @Override
@@ -90,7 +80,7 @@ public class MainActivity extends AppCompatActivity implements OnFragmentInterac
     }
 
     @Override
-    public void alEscogerPlatillo(PlatilloFragment p) {
+    public void alEscogerPlatillo(Platillo p) {
         getSupportFragmentManager()
                 .beginTransaction()
                 .replace(R.id.contenedor_principal, new DetallesPlatilloFragment(p,this))

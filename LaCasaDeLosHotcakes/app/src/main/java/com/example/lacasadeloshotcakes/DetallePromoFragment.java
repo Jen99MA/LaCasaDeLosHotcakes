@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
-public class DetallePromoActivityFragment extends Fragment {
+public class DetallePromoFragment extends Fragment {
 //public class DetallePromoActivity extends AppCompatActivity {
 
 
