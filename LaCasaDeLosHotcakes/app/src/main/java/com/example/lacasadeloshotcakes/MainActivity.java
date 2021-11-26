@@ -18,12 +18,12 @@ public class MainActivity extends AppCompatActivity implements OnFragmentInterac
 
         getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.contenedor_principal, new PromoFragment())
+                .replace(R.id.contenedor_principal, new PromoFragment(this))
                 .commit();
 
         getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.contenedor_inferior, new MenuFragment())
+                .replace(R.id.contenedor_inferior, new MenuFragment(this))
                 .commit();
 
 
