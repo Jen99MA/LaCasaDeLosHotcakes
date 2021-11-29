@@ -4,12 +4,13 @@ public class Promo {
 //Antes se llamaba public class Promo
 
 
-    public String promo;
-    public int promoImag;
+    public String promo, descripcionPromo;
+    public int direccionImagenPromo;
 
-    public Promo(String _promo, int _promoImage)
+    public Promo(String _promo, String _descripcionPromo, int _direccionImagenPromo)
     {
         promo = _promo;
-        promoImag = _promoImage;
+        descripcionPromo = _descripcionPromo;
+        direccionImagenPromo = _direccionImagenPromo;
     }
 }

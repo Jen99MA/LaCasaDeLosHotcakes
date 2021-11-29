@@ -88,4 +88,15 @@ public class MainActivity extends AppCompatActivity implements OnFragmentInterac
                 .addToBackStack(null)
                 .commit();
     }
+
+    @Override
+    public void alEscogerPromo(Promo p) {
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.contenedor_principal, new DetallePromoFragment(p,this))
+                .setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left)
+                .addToBackStack(null)
+                .commit();
+
+    }
 }
