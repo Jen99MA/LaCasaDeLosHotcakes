@@ -4,18 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
     <FrameLayout
         android:id="@+id/contenedor_principal"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        tools:layout="@layout/fragment_promo"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout="@layout/fragment_promo" />
+
     <FrameLayout
         android:id="@+id/contenedor_inferior"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        tools:layout="@layout/fragment_menu"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout="@layout/fragment_menu" />
 </androidx.constraintlayout.widget.ConstraintLayout>
