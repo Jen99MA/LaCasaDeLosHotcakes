@@ -30,9 +30,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif-medium"
             android:gravity="left"
             android:text="Nombre"
-            android:textSize="20sp" />
+            android:textColor="#FAF6F6"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/nombre_EditText"
@@ -42,13 +44,19 @@
             android:hint="Nombre del que Reserva"
             android:inputType="textPersonName" />
 
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif-medium"
             android:gravity="left"
             android:text="Número de Comensales"
-            android:textSize="20sp" />
+            android:textColor="#FAF6F6"
+            android:textSize="24sp" />
 
         <EditText
             android:id="@+id/numero_EditText"
@@ -58,26 +66,37 @@
             android:hint="¿Cuántos son?"
             android:inputType="textPersonName" />
 
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif-medium"
             android:gravity="left"
             android:text="Fecha de Reservación"
-            android:textSize="20sp" />
+            android:textColor="#FAF6F6"
+            android:textSize="24sp" />
 
         <DatePicker
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            />
+            android:layout_height="wrap_content"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:fontFamily="sans-serif-medium"
             android:gravity="left"
             android:text="Hora de la Reservación"
-            android:textSize="20sp" />
+            android:textColor="#FAF6F6"
+            android:textSize="24sp" />
         <EditText
             android:id="@+id/hora_EditText"
             android:layout_width="match_parent"
@@ -85,14 +104,19 @@
             android:ems="10"
             android:hint="09:00 am"
             android:inputType="textPersonName" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
 
         <Button
-            android:id="@+id/reservar_burron"
+            android:id="@+id/reservar_boton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Reservar" />
 
-
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"/>
 
 
     </LinearLayout>

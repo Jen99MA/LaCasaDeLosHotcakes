@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".confirmacion_activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".ReservacionesFragment">
+
+        <TextView
+            android:id="@+id/confirmacion_TextView"
+            android:layout_width="411dp"
+            android:layout_height="wrap_content"
+            android:background="#FF5722"
+            android:fontFamily="sans-serif-medium"
+            android:text="Confirmación"
+            android:textAlignment="center"
+            android:textColor="#F8F6F6"
+            android:textSize="34sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="La reservación queda al nombre de:"
+            />
+
+        <TextView
+            android:id="@+id/elquereserva"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Aquí va el nombre de quién reserva"
+            />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Número de comenzales"
+            />
+
+        <TextView
+            android:id="@+id/numero"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Aquí va el numero"
+            />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="El día:"
+            />
+
+        <TextView
+            android:id="@+id/fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Aquí va la fecha"
+            />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="A las:"
+            />
+
+        <TextView
+            android:id="@+id/hora"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Aquí va la hora"
+            />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"/>
+
+
+
+    </LinearLayout>
+</ScrollView>
