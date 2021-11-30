@@ -41,9 +41,9 @@ public class PromocionesFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_promociones, container, false);
 
         promociones.add(new Promo("2 x 1 en Hotcakes Clásicos", "Selecciona tu sabor favorito de hotcakes clásicos y obten otra orden completamente gratis", R.drawable.promo));
-        promociones.add(new Promo("2 x 1 en Hotcakes Clásicos", "Selecciona tu sabor favorito de hotcakes clásicos y obten otra orden completamente gratis", R.drawable.promodos));
-        promociones.add(new Promo("2 x 1 en Hotcakes Clásicos", "Selecciona tu sabor favorito de hotcakes clásicos y obten otra orden completamente gratis", R.drawable.promotres));
-        promociones.add(new Promo("2 x 1 en Hotcakes Clásicos", "Selecciona tu sabor favorito de hotcakes clásicos y obten otra orden completamente gratis", R.drawable.promocuatro));
+        promociones.add(new Promo("Envio Gratis", "Disfruta tus alimentos favoritos desde la comodidad de tu hogar con el envió totalmente ¡Gratis!", R.drawable.promodos));
+        promociones.add(new Promo("Malteada Gratis", "Acompaña tus Hotcakes con una de nuestras deliciosas malteadas, en la compra de unos Hotcakes Especiales será completamente gratis", R.drawable.promotres));
+        promociones.add(new Promo("Club Sandwitch", "Llevate el sandwitch de tu preferencia y acompañalas con una orden de  papas a la francesa por solo $75", R.drawable.promocuatro));
 
         menuRecycleview = view.findViewById(R.id.promociones_RecyclerView);
 
