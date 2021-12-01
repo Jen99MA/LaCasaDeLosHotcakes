@@ -1,8 +1,8 @@
 package com.example.lacasadeloshotcakes;
 
-public class Promo {
-//Antes se llamaba public class Promo
+import java.io.Serializable;
 
+public class Promo implements Serializable {
 
     public String promo, descripcionPromo;
     public int direccionImagenPromo;

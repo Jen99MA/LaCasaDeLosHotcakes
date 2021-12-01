@@ -3,6 +3,7 @@ package com.example.lacasadeloshotcakes;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -12,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 public class AdaptadorPromos extends RecyclerView.Adapter<AdaptadorPromos.ViewHolder> {
-    AdaptadorPromos.OnItemClickListener listener;
+    OnItemClickListener listener;
     List<Promo> promosAMostrar;
 
 
@@ -24,7 +25,7 @@ public class AdaptadorPromos extends RecyclerView.Adapter<AdaptadorPromos.ViewHo
     @Override
     public AdaptadorPromos.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_promocion, parent, false);
-        AdaptadorPromos.ViewHolder vh = new AdaptadorPromos.ViewHolder(v);
+        ViewHolder vh = new ViewHolder(v);
 
         return  vh;
     }
@@ -42,22 +43,21 @@ public class AdaptadorPromos extends RecyclerView.Adapter<AdaptadorPromos.ViewHo
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
 
-        TextView tituloTextView, detallesTextView;
+        TextView tituloTextView;
         ImageView promoImageView;
 
         public ViewHolder(@NonNull View itemView){
             super (itemView);
 
+
             tituloTextView = itemView.findViewById(R.id.titulo_text_view);
-            promoImageView= itemView.findViewById(R.id.platillo_image_view);
-            detallesTextView= itemView.findViewById(R.id.detalles_text_view);
+            promoImageView= itemView.findViewById(R.id.promocion_image_view);
         }
 
         public void bind (final Promo p, final OnItemClickListener listener){
 
             tituloTextView.setText(p.promo);
             promoImageView.setImageResource(p.direccionImagenPromo);
-            detallesTextView.setText(p.descripcionPromo);
 
 
 

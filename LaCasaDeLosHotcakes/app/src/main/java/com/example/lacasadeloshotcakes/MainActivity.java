@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity implements OnFragmentInterac
 
         getSupportFragmentManager()
                 .beginTransaction()
-                .replace(R.id.contenedor_principal, new PromoFragment(this))
+                .replace(R.id.contenedor_principal, new HomeFragment(this))
                 .commit();
 
         getSupportFragmentManager()
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements OnFragmentInterac
                         .beginTransaction()
                         .setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left)
                         .addToBackStack(null)
-                        .replace(R.id.contenedor_principal, new PromoFragment())
+                        .replace(R.id.contenedor_principal, new PromocionesFragment(this))
                         .commit();
 
                  break;
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements OnFragmentInterac
                         .beginTransaction()
                         .setCustomAnimations(R.anim.enter_from_right, R.anim.exit_to_left)
                         .addToBackStack(null)
-                        .replace(R.id.contenedor_principal, new HomeFragment())
+                        .replace(R.id.contenedor_principal, new HomeFragment(this))
                         .commit();
 
                 break;

@@ -43,28 +43,22 @@ listener = _listener;
 
    public static class ViewHolder extends RecyclerView.ViewHolder{
 
-        TextView tituloTextView, detallesTextView, dalergiasTextView,precioTextView;
-        ImageView platilloImageView, calificacionImageView;
+        TextView tituloTextView;
+        ImageView platilloImageView;
 
         public ViewHolder(@NonNull View itemView){
            super (itemView);
 
             tituloTextView = itemView.findViewById(R.id.titulo_text_view);
             platilloImageView= itemView.findViewById(R.id.platillo_image_view);
-            detallesTextView= itemView.findViewById(R.id.detalles_text_view);
-            dalergiasTextView = itemView.findViewById(R.id.dalergias_text_view);
-            precioTextView= itemView.findViewById(R.id.precio_text_view);
-            calificacionImageView= itemView.findViewById(R.id.calificacion_image_view);
+
         }
 
         public void bind (final Platillo p, final OnItemClickListener listener){
 
             tituloTextView.setText(p.titulo);
             platilloImageView.setImageResource(p.direccionImagenPlatillo);
-            detallesTextView.setText(p.detalles);
-            dalergiasTextView.setText(p.dalergias);
-            precioTextView.setText(p.precio);
-            calificacionImageView.setImageResource(p.direcconImagenCalificacion);
+
 
 
 
