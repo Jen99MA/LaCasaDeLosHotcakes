@@ -32,6 +32,9 @@
             android:scaleType="fitCenter"
             android:layout_gravity="center_horizontal" />
 
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"/>
 
         <TextView
             android:id="@+id/tdescripcionPromo_text_view"
@@ -41,6 +44,9 @@
             android:gravity="left"
             android:text="Descripción"
             android:textSize="24sp" />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
 
         <Button
             android:id="@+id/reservar_burron"

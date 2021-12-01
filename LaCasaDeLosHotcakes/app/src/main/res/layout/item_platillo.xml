@@ -7,26 +7,26 @@
     <!-- Foto, Nombre, Descripción, Calificación, Alergias, Precio-->
 
 
-
-
     <ImageView
         android:id="@+id/platillo_image_view"
         android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:src="@drawable/fresas1"
+        android:layout_height="178dp"
+        android:layout_gravity="center_horizontal"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
-        android:layout_gravity="center_horizontal" />
+        android:src="@drawable/fresas1" />
 
     <TextView
         android:id="@+id/titulo_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:background="#FF5722"
+        android:fontFamily="sans-serif-medium"
         android:gravity="center_horizontal"
         android:text="Hotcakes con Fresas"
-        android:textSize="30sp"
-        />
+        android:textColor="#F3ECEC"
+        android:textSize="30sp" />
 
 
     

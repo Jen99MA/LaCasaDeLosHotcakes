@@ -16,6 +16,7 @@ public class ReservacionesFragment extends Fragment {
 
  TextView nombreEditText, numeroEditText, fechaEditText, horaEditText;
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -25,6 +26,7 @@ public class ReservacionesFragment extends Fragment {
 
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.activity_reservaciones, container, false);
+
 
 
         return inflater.inflate(R.layout.activity_reservaciones, container, false);

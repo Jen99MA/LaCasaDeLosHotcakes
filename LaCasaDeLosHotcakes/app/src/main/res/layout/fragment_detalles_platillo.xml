@@ -50,6 +50,10 @@
             android:text="Descripcion"
             android:textSize="24sp" />
 
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
         <TextView
             android:id="@+id/detalles_text_view"
             android:layout_width="match_parent"
@@ -58,6 +62,10 @@
             android:gravity="left"
             android:text="descripción del platillo"
             android:textSize="15sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"/>
 
         <TextView
             android:id="@+id/talergias_text_view"
@@ -68,6 +76,10 @@
             android:text="Alergias"
             android:textSize="24sp" />
 
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="10dp"/>
+
         <TextView
             android:id="@+id/dalergias_text_view"
             android:layout_width="match_parent"
@@ -76,6 +88,11 @@
             android:gravity="left"
             android:text="especificaciones de alergias"
             android:textSize="15sp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
 
         <TextView
             android:id="@+id/precio_text_view"

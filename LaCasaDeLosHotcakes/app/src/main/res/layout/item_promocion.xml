@@ -5,24 +5,25 @@
     android:layout_height="match_parent">
 
 
-
-
     <TextView
-     android:id="@+id/titulo_text_view"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center_horizontal"
-    android:gravity="left"
-    android:text="Promoción 2x1 en Hotcakes"
-    android:textSize="25dp" />
+        android:id="@+id/titulo_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#FF5722"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="left"
+        android:text="Promoción 2x1 en Hotcakes"
+        android:textColor="#F8F4F4"
+        android:textSize="25dp" />
 
     <ImageView
         android:id="@+id/promocion_image_view"
         android:layout_width="400dp"
-        android:layout_height="wrap_content"
-        android:src="@drawable/promo1"
+        android:layout_height="112dp"
+        android:layout_gravity="center_horizontal"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"
-        android:layout_gravity="center_horizontal" />
+        android:src="@drawable/promo1" />
 
 </LinearLayout>

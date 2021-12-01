@@ -52,7 +52,7 @@
         android:layout_width="414dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="79dp"
+        android:layout_marginTop="36dp"
         android:background="#FF5722"
         android:gravity="left"
         android:lineSpacingExtra="8sp"
@@ -60,7 +60,9 @@
         android:textAlignment="center"
         android:textColor="#F6F3F3"
         android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@id/platillo_image_view" />
+        app:layout_constraintTop_toBottomOf="@id/platillo_image_view"
+        tools:layout_editor_absoluteX="-2dp" />
+
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
@@ -96,5 +98,6 @@
         app:layout_constraintStart_toEndOf="@id/DesayunoMenuImageView"
         app:layout_constraintEnd_toEndOf="parent"
         />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
